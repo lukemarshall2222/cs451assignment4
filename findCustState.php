@@ -9,7 +9,7 @@ or die('Error connecting to MySQL server.');
 
 <html>
 <head>
-  <title>Another Simple PHP-MySQL Program</title>
+  <title>CS 451 Assignment 4</title>
   </head>
   
   <body bgcolor="white">
