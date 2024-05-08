@@ -20,9 +20,9 @@ or die('Error connecting to MySQL server.');
   
 <?php
   
-$manufacturer = $_POST['manufacturer'];
+$state = $_POST['state'];
 
-$manufacturer = mysqli_real_escape_string($conn, $manufacturer);
+$state = mysqli_real_escape_string($conn, $state);
 // this is a small attempt to avoid SQL injection
 // better to use prepared statements
 
@@ -31,7 +31,7 @@ JOIN orders o ON c.customer_num = o.customer_num
 JOIN items i ON o.order_num = i.order_num
 JOIN stock s ON i.stock_num = s.stock_num
 JOIN manufact m ON s.manu_code = m.manu_code WHERE m.manu_name = ";
-$query = $query."'".$manufacturer."';";
+$query = $query."'".$state."';";
 
 ?>
 
