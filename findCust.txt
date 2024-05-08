@@ -2,20 +2,19 @@
 
 <html>
 <head>
-       <title>Another Simple PHP-MySQL Program</title>
+       <title>CS 451 Assignment 4</title>
 </head>
 
 <body bgcolor="white">
 
-<h3>Connecting to bighitvideo using MySQL/PHP</h3>
+<h3>Connecting to stores7 using MySQL/PHP</h3>
 
 
 
 <hr>
 
 <p>
-Please enter a state name by its code.  The only codes that have
-any data now are ("FL", "LA" and "IL").
+Please enter a the name of a manufacturer (e.g., Anza, Hero, etc.).
 
 <p>
 
@@ -35,7 +34,7 @@ any data now are ("FL", "LA" and "IL").
 of this page.
 
 <p>
-<a href="findCustState.txt" >Contents</a>
+<a href="findCustManu.txt" >Contents</a>
 of the PHP page that gets called.
 (And the <a href="connectionData.txt" >connection data</a>,
 kept separately for security reasons.)
