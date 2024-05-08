@@ -31,7 +31,7 @@ JOIN orders o ON c.customer_num = o.customer_num
 JOIN items i ON o.order_num = i.order_num
 JOIN stock s ON i.stock_num = s.stock_num
 JOIN manufact m ON s.manu_code = m.manu_code WHERE m.manu_name = ";
-$query = $query."'".$state."' ORDER BY 2;";
+$query = $query."'".$state."';";
 
 ?>
 
@@ -55,7 +55,7 @@ print "<pre>";
 while($row = mysqli_fetch_array($result, MYSQLI_BOTH))
   {
     print "\n";
-    print "$row[fname]  $row[lname]  $row[city]";
+    print "$row[fname]  $row[lname]  $row[description]";
   }
 print "</pre>";
 
