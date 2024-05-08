@@ -20,7 +20,7 @@ or die('Error connecting to MySQL server.');
   
 <?php
   
-$state = $_POST['manu'];
+$state = $_POST['state'];
 
 $state = mysqli_real_escape_string($conn, $state);
 // this is a small attempt to avoid SQL injection
